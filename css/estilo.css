@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1#titulo {
+    font-size: 1.75rem;
+    margin: 1rem auto 0 1.5rem;
+}
+
+.main h1 {
+    font-size: 1.25rem;
+    margin: 0 0 0 0.2rem;
+}
+
+#prontuario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+label p {
+    margin: 0 0 0.5rem 0.2rem;
+}
+
+input, select, textarea, option {
+    padding: 0.5rem;
+    border-radius: 7px;
+    appearance: none;
+    border: none;
+    outline: none;
+    transition: background 0.1s ease-in-out;
+}
+
+input:hover, select:hover, textarea:hover, option:hover {
+    background-color: #f3f2f2;
+}
+
+input:focus, select:focus, textarea:focus, option:focus {
+    background-color: #f3f2f2;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.main {
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.101);
+}
+
+.main.fundo {
+    margin-top: 2rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* 
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 2rem;
+} */
+
+.container.metade {
+    width: 100%;
+}
+
+
+.metade {
+    width: 49.5%;
+}
+
+.dois-terços {
+    width: 66%;
+}
+
+.um-terço {
+    width: 33%;
+}
