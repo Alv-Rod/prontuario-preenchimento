@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <!-- <nav>
+        <a href="">
+            <img class="icon "src="https://img.icons8.com/ios-glyphs/30/medical-doctor.png" alt="medical-doctor"/>
+        </a>
+        <a href="">
+            <img class="icon" src="https://img.icons8.com/material-rounded/24/clipboard.png" alt="clipboard"/>
+        </a>
+    </nav> -->
     <main>
         <h1 id="titulo">Prontuário</h1>
         <form action="backend.php" method="post" name="prontuario" id="prontuario">
@@ -79,6 +87,16 @@
             <div class="main fundo">
                 <h1>Atendimento</h1>
                 <div class="container metade">
+                    <label for="crm" class="metade">
+                        <p>CRM</p>
+                        <input type="text" name="prontuario" id="crm">
+                    </label>
+                    <label for="data" class="metade">
+                        <p>Data</p>
+                        <input type="date" name="prontuario" id="data">
+                    </label>
+                </div>
+                <div class="container metade">
                     <label for="necessidades" class="metade">
                         <p>Necessidades Especiais</p>
                         <input type="text" name="prontuario" id="necessidades">
@@ -119,8 +137,11 @@
                         <textarea name="prontuario" id="pos-atendimento" rows="15"></textarea>
                     </label>
                 </div>
+    
+    
             </div>
         </form>
     </main>
+    
 </body>
 </html>
