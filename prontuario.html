@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <!-- <nav>
+        <a href="">
+            <img class="icon "src="https://img.icons8.com/ios-glyphs/30/medical-doctor.png" alt="medical-doctor"/>
+        </a>
+        <a href="">
+            <img class="icon" src="https://img.icons8.com/material-rounded/24/clipboard.png" alt="clipboard"/>
+        </a>
+    </nav> -->
     <main>
         <h1 id="titulo">Prontuário</h1>
         <form action="backend.php" method="post" name="prontuario" id="prontuario">
@@ -14,7 +22,7 @@
                 <h1>Informações Pessoais</h1>
                 <div class="container dois-um">
                     <label for="nome" class="dois-terços">
-                        <p>Nome</p>
+                        <p>Nome Completo</p>
                         <input type="text" name="prontuario" id="nome">
                     </label>
                     
@@ -23,7 +31,13 @@
                         <select name="prontuario" id="sexo">
                             <option value="masculino">Masculino</option>
                             <option value="feminino">Feminino</option>
+                            <option value="indefinido">Indefinido</option>
                         </select>
+                    </label>
+
+                    <label for="nome-social" class="dois-terços">
+                        <p>Nome Social (se aplicável)</p>
+                        <input type="text" name="prontuario" id="nome-social">
                     </label>
                 </div>
     
@@ -38,9 +52,18 @@
                         <input type="date" name="prontuario" id="nascimento">
                     </label>
             
-        
+                    <label for="nome-mae" class="metade">
+                        <p>Nome da Mãe</p>
+                        <input type="text" name="prontuario" id="nome-mae">
+                    </label>
+
+                    <label for="cartao-sus" class="metade">
+                        <p>Número do Cartão do SUS</p>
+                        <input type="number" name="prontuario" id="cartão-sus">
+                    </label>
+
                     <label for="email" class="metade">
-                        <p>E-mail</p>
+                        <p>Endereço de E-mail</p>
                         <input type="email" name="prontuario" id="email">
                     </label>
             
@@ -51,13 +74,13 @@
                     </label>
             
                     <label for="telefone-emergencia" class="metade">
-                        <p>Telefone emergencial</p>
+                        <p>Telefone de Emergência</p>
                         
                         <input type="tel" name="prontuario" id="telefone-emergencia">
                     </label>
             
                     <label for="nome-emergencia" class="metade">
-                        <p>Nome (emergencial)</p>
+                        <p>Contato de Emergência</p>
                         
                         <input type="text" name="prontuario" id="nome-emergencia">
                     </label>
@@ -65,12 +88,12 @@
     
                 <div class="container">
                     <label for="endereço" class="dois-terços">
-                        <p>Endereço</p>
+                        <p>Endereço Completo</p>
                         <input type="text" name="prontuario" id="endereço">
                     </label>
         
                     <label for="escolaridade" class="um-terço">
-                        <p>Escolaridade</p>
+                        <p>Nível de Escolaridade</p>
                         <input type="text" name="prontuario" id="escolaridade">
                     </label>
                 </div>
@@ -80,57 +103,52 @@
                 <h1>Atendimento</h1>
                 <div class="container metade">
                     <label for="crm" class="metade">
-                        <p>CRM</p>
-                        <input type="text" name="prontuario" id="crm">
+                        <p>Registro no Coren</p>
+                        <input type="text" name="prontuario" id="coren">
                     </label>
                     <label for="data" class="metade">
-                        <p>Data</p>
+                        <p>Data do Atendimento</p>
                         <input type="date" name="prontuario" id="data">
                     </label>
                 </div>
                 <div class="container metade">
-                    <label for="necessidades" class="metade">
-                        <p>Necessidades Especiais</p>
-                        <input type="text" name="prontuario" id="necessidades">
-                    </label>
-        
-                    <label for="alergias" class="metade">
-                        <p>Alergias</p>
+                          
+                    <label for="alergias" >
+                        <p>Alergias Conhecidas</p>
                         <input type="text" name="prontuario" id="alergias">
                     </label>
                 </div>
                 
                 <label for="sintomas">
-                    <p>Sintomas</p>
+                    <p>Sintomas Apresentados</p>
                     <textarea name="prontuario" id="sintomas" rows="3"></textarea>
                 </label>
     
                 <div class="container metade">
                     <label for="atendimento" class="metade">
-                        <p>Atendimento</p>
+                        <p>Descrição do Atendimento</p>
                         <textarea name="prontuario" id="atendimento" rows="15"></textarea>
                     </label>
         
-                    <label for="diagnostico" class="metade">
-                        <p>Diagnóstico</p>
-                        <textarea name="prontuario" id="diagnostico" rows="15"></textarea>
+                    <label for="possivel-diagnostico" class="metade">
+                        <p>Hipótese Diagnóstica</p>
+                        <textarea name="prontuario" id="possivel-diagnostico" rows="15"></textarea>
                     </label>
                 </div>
                 
     
                 <div class="container metade">
                     <label for="receituario" class="metade">
-                        <p>Receituário</p>
+                        <p>Prescrição Médica</p>
                         <textarea name="prontuario" id="receituario" rows="15"></textarea>
                     </label>
         
                     <label for="pos-atendimento" class="metade">
-                        <p>Pós-Atendimento</p>
+                        <p>Instruções Pós-Atendimento</p>
                         <textarea name="prontuario" id="pos-atendimento" rows="15"></textarea>
                     </label>
                 </div>
-    
-    
+        
             </div>
         </form>
     </main>
